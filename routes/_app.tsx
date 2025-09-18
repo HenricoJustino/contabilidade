@@ -8,8 +8,9 @@ export default function App({ Component }: PageProps) {
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>moderno</title>
-        <link rel="stylesheet" href="/styles.css" />
+        <title>IM Contabilidade</title>
+        <link rel="stylesheet" href="/styles/index.css" />
+        <link rel="stylesheet" href="/styles/menu.css" />
         <link rel="stylesheet" href="/Rosel.ttf" />
       </head>
       <body>

@@ -16,7 +16,7 @@ export function Menu() {
             <a href="">Planos</a>
         </div>
         
-        <a className="btn-inicio" href="">ROLUDO</a>
+        <a className="btn-inicio" href="">Fale Conosco</a>
     </nav>
   );
 }

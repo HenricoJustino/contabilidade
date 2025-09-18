@@ -6,15 +6,20 @@ export default function Home() {
     <div>
       <main id="main">
         <div className="img"></div>
-        <h1>Contabilidade online, fácil e segura para sua empresa</h1>
+        <div className="texto">
+          <p>Contabilidade online,</p>
+          <p>fácil e segura para sua</p>
+          <p>empresa</p>
+        </div>
+        <a href="" className="btn-inicio bi">Fale Conosco</a>
       </main>
       <main className="main2">
-        <div className="text">
-          
-        </div>
-        <div className="img2">
-          <img className="imgmain2" src="italo.png" alt="" />
-        </div>
+        <h1>Serviços</h1>
+        <section>
+          <div className="card"></div>
+          <div className="card"></div>
+          <div className="card"></div>
+        </section>
       </main>
     </div>
     
