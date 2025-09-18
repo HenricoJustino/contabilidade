@@ -1,0 +1,194 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* Druk Condensed font (self-hosted) */
+@font-face{
+  font-family: 'Druk Condensed';
+  src: url('/Druk_Collection/Druk Condensed Family/DrukCond-Super-Trial.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root{
+    --titulo: #221A25;
+    --titulo-claro: #A7A195;
+    --fundo: #32323D;
+    --fundo-claro: #B2AA8E;
+    --link: #BD996C;
+    --link-claro: #B2AA8E;
+    --subtitulo: #32323D;
+    --subtitulo-claro: #A5907C;
+    --botao: #BD996C;
+    --botao-texto-claro: #FFFFFF;
+    --botao-claro: #A5907C;
+    --botao-texto: #221A25;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--fundo);
+    z-index: 5;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#main{
+    background-image: url('/fundo.webp');
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+h1{
+    color: var(--titulo-claro);
+    font-size: 80px;
+    font-family: Rosel;
+}   
+.img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5; 
+    z-index: 1;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+    z-index: 2;
+}
+#logo{
+    font-size: 20px;
+    color: var(--titulo-claro);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-family: Rosel;
+}
+small{
+    font-size: 10px;
+    color: var(--subtitulo-claro);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-family: Bookman;
+}
+#logo, small{
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+nav{
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    top: 0;
+    position: sticky;
+    background-color: var(--fundo);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.363);
+    .blur{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        z-index: 1;
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        background: transparent;
+        position: relative;
+        
+        a{
+            color: var(--link);
+            background-color: transparent;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Bookman';
+            margin: 0 10px;
+            text-shadow: 0 0 1px rgba(0, 0, 0, 0.801);
+            z-index: 2;
+            transition: all 0.3s;
+        }
+        a:hover{
+            color: var(--link-claro);
+            transform: translateY(-2px);
+        }
+    }
+}
+.btn-inicio{
+    padding: 10px 20px;
+    background-color: var(--botao);
+    color: var(--botao-texto);
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.589);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Bookman';
+    text-shadow: 0 0 2px rgba(51, 51, 51, 0.253);
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.btn-inicio:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.589);
+}
+.main2{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 98%;
+    .text{
+        width: 50%;
+    }
+    .img2{
+        background-color: var(--titulo);
+        padding: 0;
+        border-radius: 50%;
+        position: relative;
+        .imgmain2{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            position: absolute;
+            top: 2px;
+            left: 0;
+        }
+    }
+}
