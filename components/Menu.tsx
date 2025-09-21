@@ -11,12 +11,12 @@ export function Menu() {
           <small>CONTABILIDADE</small>
         </div>
         <div className="menu">
-            <a href="">Início</a>
-            <a href="">Serviços</a>
-            <a href="">Planos</a>
+            <a href="/">Início</a>
+            <a href="/servicos">Serviços</a>
+            <a href="/planos">Planos</a>
         </div>
         
-        <a className="btn-inicio" href="">Fale Conosco</a>
+        <a className="btn" href="">Fale Conosco</a>
     </nav>
   );
 }
