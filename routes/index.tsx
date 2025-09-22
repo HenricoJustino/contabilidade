@@ -16,9 +16,21 @@ export default function Home() {
       <main id="main2">
         <h1 className="titulo">Serviços</h1>
         <section>
-          <div className="card"></div>
-          <div className="card"></div>
-          <div className="card"></div>
+          <div className="card">
+            <i class="fa-solid fa-shop"></i>
+            <h3 className="titulocard">Abertura de Empresas</h3>
+            <p className="textocard">Auxiliamos em todo o processo de formalização do seu negócio, garantindo que sua empresa esteja regularizada e pronta para crescer.</p>
+          </div>
+          <div className="card">
+            <i class="fa-solid fa-list-check"></i>
+            <h3 className="titulocard">Gestão Contábil e Fiscal</h3>
+            <p className="textocard">Organização das finanças, escrituração contábil e apuração de impostos, sempre com foco em clareza e conformidade legal.</p>
+          </div>
+          <div className="card">
+            <i class="fa-solid fa-file"></i>
+            <h3 className="titulocard">Folha de Pagamento</h3>
+            <p className="textocard">Cuidamos do cálculo de salários, encargos trabalhistas e obrigações acessórias, oferecendo tranquilidade para você e sua equipe.</p>
+          </div>
         </section>
         <a href="/servicos" className="btn">Ver todos</a>
       </main>

@@ -1,6 +1,6 @@
 import { type PageProps } from "$fresh/server.ts";
 import { Menu } from "../components/Menu.tsx";
-import { Teste } from "../components/Teste.tsx";
+import { Rodape } from "../components/Rodape.tsx";
 
 export default function App({ Component }: PageProps) {
   return (
@@ -12,6 +12,7 @@ export default function App({ Component }: PageProps) {
         <link rel="stylesheet" href="/styles/index.css" />
         <link rel="stylesheet" href="/styles/menu.css" />
         <link rel="stylesheet" href="/Rosel.ttf" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
       </head>
       <body>
         <Menu />

@@ -185,20 +185,45 @@ section{
 }
 #main2 section .card{
     width: 25%;
-    height: 600px;
+    height: 500px;
     background-color: var(--fundo-secundario);
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.363);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    padding: 50px 20px;
 }
-#main2 section .card h2{
+#main2 section .card i{
+    height: 150px;
+    width: 150px;
+    font-size: 50px;
+    border-radius: 50%;
+    background-color: var(--botao);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--botao-texto);
+}
+#main2 section .card .titulocard{
     color: var(--botao-texto);
     font-size: 40px;
     font-family: Rosel;
-    
+    margin: 50px 0 20px 0;
+    font-family: Bookman;
+}
+#main2 section .card .textocard{
+    color: var(--subtitulo);
+    font-size: 30px;
+    font-family: Bookman;
+    margin: 20px 0;
+    text-align: center;
+    padding: 0 40px;
+    font-family: Bookman;
+}
+#main2 .btn{
+    background-color: var();
 }
 
 /* Main 3 */
