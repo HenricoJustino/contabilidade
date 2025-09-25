@@ -38,6 +38,11 @@ export default function Home() {
         <section>
           <h1 className="titulo">Quem somos</h1>
           <p className="texto">Sou Italo Moura, o contador e fundador por trás da IM Contabilidade. Com mais de 7 anos de experiência, sou especialista em prestadores de serviço e ofereço um atendimento direto e humano. Unindo a contabilidade aos meus estudos de Sistemas de Informação no Instituto Federal Goiano (IF Goiano), entrego soluções tecnológicas que trazem mais eficiência para a sua gestão. Menos burocracia, mais estratégia para o seu negócio.</p>
+          <div className="social">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
         </section>
         <div className="efeito">
             <div className="efeito2"></div>
