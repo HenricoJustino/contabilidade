@@ -1,0 +1,134 @@
+/* Estilos da página de Serviços */
+
+#servicos-main {
+  width: 100%;
+  padding: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.titulo {
+  font-size: 50px;
+  color: var(--botao-texto);
+  font-family: Rosel;
+  margin-bottom: 24px;
+}
+
+.servicos-container {
+  width: min(1100px, 95%);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.servico-topico {
+  background: var(--fundo-secundario);
+  border-radius: 12px;
+  flex-direction: column;
+  box-shadow: 0 0 12px rgba(0,0,0,0.35);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.topico-header {
+  background: #1e8fff77;
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.topico-header i {
+  font-size: 24px;
+}
+
+.topico-header h2 {
+  font-size: 22px;
+  margin: 0;
+  font-weight: 600;
+  font-family: Bookman;
+}
+
+.topico-content {
+  padding: 20px 24px;
+  width: 90%;
+}
+
+.servico-lista {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.servico-lista li {
+  padding: 14px 16px;
+  position: relative;
+  border-left: 3px solid var(--botao);
+  background: rgba(255,255,255,0.02);
+  border-radius: 0 8px 8px 0;
+}
+
+.servico-lista li:nth-child(odd) {
+  background: rgba(255,255,255,0.04);
+}
+
+.servico-nome {
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--botao-texto);
+  margin-bottom: 8px;
+  font-family: Bookman;
+}
+
+.servico-desc {
+  color: var(--texto);
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .topico-header {
+    padding: 14px 20px;
+  }
+  
+  .topico-header i {
+    font-size: 20px;
+  }
+  
+  .topico-header h2 {
+    font-size: 18px;
+  }
+  
+  .topico-content {
+    padding: 16px 20px;
+  }
+  
+  .servico-nome {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #servicos-main {
+    padding: 20px 10px;
+  }
+  
+  .titulo {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .servico-lista li {
+    padding: 12px;
+  }
+}

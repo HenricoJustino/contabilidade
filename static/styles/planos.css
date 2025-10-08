@@ -10,6 +10,10 @@
   gap: 24px;
 }
 
+.titulo{
+  font-size: 50px;
+}
+
 .planos-list{
   width: min(1100px, 95%);
   display: flex;

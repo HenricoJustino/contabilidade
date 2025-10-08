@@ -11,12 +11,14 @@ export default function App({ Component }: PageProps) {
         <title>IM Contabilidade</title>
         <link rel="stylesheet" href="/styles/index.css" />
         <link rel="stylesheet" href="/styles/menu.css" />
+        <link rel="stylesheet" href="/styles/rodape.css" />
         <link rel="stylesheet" href="/Rosel.ttf" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
       </head>
       <body>
         <Menu />
         <Component />
+        <Rodape />
       </body>
     </html>
   );
