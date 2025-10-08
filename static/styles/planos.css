@@ -1,0 +1,145 @@
+/* Estilos da página de Planos */
+
+#planos-main{
+  min-height: auto;
+  width: 100%;
+  padding: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.planos-list{
+  width: min(1100px, 95%);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.planos-card{
+  background: var(--fundo-secundario);
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.35);
+  padding: 24px;
+  color: var(--texto);
+}
+
+.planos-card .card-header{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.planos-card .service-title{
+  font-size: 28px;
+  color: var(--botao-texto);
+  font-family: Rosel;
+}
+.planos-card .service-subtitle{
+  font-size: 16px;
+  color: var(--subtitulo);
+  font-family: Bookman;
+}
+
+/* Tabela em 3 colunas */
+.card-table{
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.row{
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr; /* Descrição | Básico | Completo */
+  gap: 0;
+  align-items: start;
+  div.center{
+    text-align: center;
+  }
+}
+.row > div{
+  padding: 14px 16px;
+}
+.row.header{
+  background: rgba(255,255,255,0.06);
+  font-weight: bold;
+  color: var(--botao);
+}
+.row.header > div{
+  font-family: Bookman;
+  font-size: 15px;
+}
+.row:nth-child(odd):not(.header){
+  background: rgba(255,255,255,0.02);
+}
+
+.descricao{
+  color: var(--texto);
+}
+.plano{
+  text-align: center;
+}
+.plano .inclui{
+  color: #66bb6a; /* verde suave para itens incluídos */
+  font-weight: 700;
+}
+.plano .nao-inclui{
+  color: #e57373; /* vermelho suave */
+  font-weight: 700;
+}
+.plano small{
+  display: block;
+  margin-top: 6px;
+  color: var(--subtitulo);
+  text-shadow: none;
+}
+
+.total{
+  background: rgba(255,255,255,0.04);
+}
+.price{
+  text-align: center;
+  font-family: Bookman;
+  font-size: 18px;
+  color: var(--botao-texto);
+}
+.price.highlight{
+  color: var(--destaque);
+  font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 900px){
+  .row{
+    grid-template-columns: 1fr; /* Empilha para mobile */
+  }
+  .row.header{
+    display: none; /* Esconde cabeçalho em mobile */
+  }
+  .row > div{
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .descricao::before{
+    content: "Descrição";
+    display: block;
+    color: var(--subtitulo);
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+  .plano.basico::before{
+    content: "Básico";
+    display: block;
+    color: var(--subtitulo);
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+  .plano.completo::before{
+    content: "Completo";
+    display: block;
+    color: var(--subtitulo);
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+}
