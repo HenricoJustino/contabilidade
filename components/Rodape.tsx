@@ -23,9 +23,9 @@ export function Rodape() {
         <div className="rodape-section">
           <h3>Redes Sociais</h3>
           <div className="social-icons">
-            <a href="#" aria-label="Instagram"><i className="fa-brands fa-instagram"></i></a>
-            <a href="#" aria-label="Facebook"><i className="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-youtube"></i></a>
             <a href="#" aria-label="LinkedIn"><i className="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i className="fa-brands fa-instagram"></i></a>
             <a href="#" aria-label="WhatsApp"><i className="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>

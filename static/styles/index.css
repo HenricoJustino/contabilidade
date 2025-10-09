@@ -268,15 +268,26 @@ section{
     border-radius: 50%;
     z-index: 5;
 }
-.social{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 150px;
-    height: 100px;
-    a{
-        font-size: 40px;
-        color: var(--botao);
-    }
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background: var(--botao);
+  transform: translateY(-3px);
+  text-decoration: none;
+}
+
+.social-icons i {
+  font-size: 30px;
+  color: var(--botao-texto);
 }

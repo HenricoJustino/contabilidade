@@ -37,10 +37,11 @@ export default function Home() {
         <section>
           <h1 className="titulo">Quem somos?</h1>
           <p className="texto">Sou Italo Moura, o contador e fundador por trás da IM Contabilidade. Com mais de 7 anos de experiência, sou especialista em prestadores de serviço e ofereço um atendimento direto e humano. Unindo a contabilidade aos meus estudos de Sistemas de Informação no Instituto Federal Goiano (IF Goiano), entrego soluções tecnológicas que trazem mais eficiência para a sua gestão. Menos burocracia, mais estratégia para o seu negócio.</p>
-          <div className="social">
-            <a href=""><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://www.instagram.com/italomoura.s/"><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <div className="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i className="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i className="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="WhatsApp"><i className="fa-brands fa-whatsapp"></i></a>
           </div>
         </section>-
         <div className="efeito">
