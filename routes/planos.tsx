@@ -2,7 +2,7 @@ import { Head } from "$fresh/runtime.ts";
 
 export default function planos() {
   return (
-    <div>
+    <>
       <Head>
         <link rel="stylesheet" href="/styles/planos.css" />
       </Head>
@@ -268,7 +268,6 @@ export default function planos() {
           </article>
         </section>
       </main>
-    </div>
-    
+    </>
   );
 }
