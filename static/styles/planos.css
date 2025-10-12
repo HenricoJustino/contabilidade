@@ -95,6 +95,7 @@
   font-weight: 700;
 }
 .plano small{
+  font-size: 14px;
   display: block;
   margin-top: 6px;
   color: var(--subtitulo);

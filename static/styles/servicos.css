@@ -32,6 +32,8 @@
   box-shadow: 0 0 12px rgba(0,0,0,0.35);
   overflow: hidden;
   transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
 }
 
 .topico-header {

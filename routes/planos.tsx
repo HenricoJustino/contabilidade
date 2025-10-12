@@ -106,7 +106,7 @@ export default function planos() {
               <div className="row">
                 <div className="descricao">Regime tributário</div>
                 <div className="plano basico"><small>simples nacional</small></div>
-                <div className="plano completo"><small>todos (honorário ajustado conforme demandas)</small></div>
+                <div className="plano completo"><small>Simples Nacional, Lucro Prezumido e Lucro Real<br />(honorário ajustado conforme demandas)</small></div>
               </div>
               <div className="row">
                 <div className="descricao">Faturamento</div>
