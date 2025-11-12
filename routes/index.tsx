@@ -14,12 +14,12 @@ export default function Home() {
           <small>- Planos de acordo com a necessidade do seu negocio</small>
           <a href="" className="btn bi">Fale Conosco</a>
         </div>
-        <div className="img">
-          <img className="imgprincipal" src="/img/w1.JPG" alt="img" />
-        </div>
+        {/* <div className="img">
+          <img className="imgprincipal" src="/img/w1.jpg" alt="img" />
+        </div> */}
       </main>
       <main id="main1">
-        <img className="imgmei" src="/img/w2.JPG" alt="img" />
+        <img className="imgmei" src="/img/w2.jpg" alt="img" />
         <div>
           <h1>O limite do MEI é um obstáculo para o seu crescimento?</h1>
           <br />
