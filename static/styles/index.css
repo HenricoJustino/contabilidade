@@ -135,17 +135,12 @@ main{
 
 #main0{
     height: 70vh;
-    background-image: url('/img/fundo.webp');
     margin: 0;
-    position: relative;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* background-attachment: fixed; */
 
-    align-items: start;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
 }
 .textoprincipal{
     margin: 0 0 0 100px;
@@ -158,24 +153,25 @@ main{
     align-items: start;
 }   
 .textoprincipal small{
-    color: var(--titulo);
+    color: var(--subtitulo);
     margin-top: 20px;
     font-size: 20px;
     text-shadow: none;
 }
 
 .bi{
-    margin: 20px 0 0 100px;
+    margin: 20px 0 0 0;
 }
 .img{
-    width: 100%;
+    display: flex;
+    height: 80%;
+    margin-right: 100px;
+}
+.imgprincipal{
+    display: flex;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.5; 
+    border-radius: 20px;
     z-index: 1;
-    background: linear-gradient(0.25turn, black,rgba(0, 0, 0, 0));
 }
 
 
@@ -184,34 +180,33 @@ main{
     background-color: var(--fundo-secundario);
     flex-direction: column;
     align-items: start;
-    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 
     h1{
         color: var(--titulo);
         font-size: 50px;
         font-family: Rosel;
-        margin-left: 100px;
+        margin-right: 100px;
     }
     p{
         color: var(--subtitulo);
         font-size: 30px;
         font-family: Bookman;
-        margin-left: 100px;
+        margin-right: 100px;
         max-width: 1000px;
     }
 
-    i{
-        position: absolute;
+    .imgmei{
         right: 100px;
         font-size: 150px;
-        color: var(--botao-texto);
-        background-color: var(--botao);
         height: 400px;
-        width: 400px;
+        margin-left: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 50%;
+        border-radius: 20px;
     }
 }
 
@@ -224,32 +219,32 @@ main{
     justify-content: space-evenly;
     width: 100%;
     height: 94vh;
-    position: relative;
-    overflow: hidden;
 }
 .carrossel{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: row;
+    align-items: center; 
+    width: 80%;
+    overflow-x: scroll;
+    padding: 10px;
+}
+#main2 section .cards{
+    display: flex;
+    flex-direction: row;
     width: 150%;
-    position: absolute;
-    left: 0;
-    /* posição relativa para transformar sem afetar o fluxo */
-    transform: translateX(0);
-    /* ajuste a duração para acelerar/retardar o ciclo */
-    animation: movePause 28s linear 5s infinite alternate;
 }
 #main2 section .card{
+    display: flex;  
     width: 400px;
     height: 450px;
     background-color: var(--fundo-secundario);
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.363);
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
     padding: 50px 20px;
+    margin: 0 10px;
 }
 #main2 section .card i{
     height: 100px;
@@ -272,7 +267,7 @@ main{
 }
 #main2 section .card .textocard{
     color: var(--subtitulo);
-    font-size: 20px;
+    font-size: 22px;
     font-family: Bookman;
     margin: 20px 0;
     text-align: center;
@@ -281,16 +276,27 @@ main{
 }
 #main2 .btn{
     background-color: var(--botao);
-    position: absolute;
-    bottom: 100px;
+    bottom: 50px;
 
 }
 #main2 .titulo{
-    position: absolute;
-    top: 40px;
+    margin: 0;
+}
+/* Para navegadores baseados em WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+width: 12px; /* Largura da barra de rolagem */
 }
 
-@keyframes movePause {
+::-webkit-scrollbar-track {
+background: var(--fundo); /* Cor do fundo da barra */
+}
+
+::-webkit-scrollbar-thumb {
+background-color: var(--link); /* Cor do "polegar" (parte rolável) */
+border-radius: 10px; /* Arredondamento do polegar */
+}
+
+/* @keyframes movePause {
     0%, 31.8% {
       transform: translateX(0);
     }
@@ -300,7 +306,7 @@ main{
     72.7%, 100% {
       transform: translateX(0);
     }
-  }
+  } */
 
 /* Main 3 */
 

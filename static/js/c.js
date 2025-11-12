@@ -1,0 +1,3 @@
+function passa(){
+    alert("funcionando")
+}
