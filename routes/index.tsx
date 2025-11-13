@@ -9,9 +9,9 @@ export default function Home() {
           <p>Contabilidade online,</p>
           <p>fácil e segura para sua</p>
           <p>empresa</p>
-          <small>- Assessoria exclusiva com especialistas do segmento do seu negocio</small>
-          <small>- Atendimento humanizado Comunicação clara e próxima, sem burocracia.</small>
-          <small>- Planos de acordo com a necessidade do seu negocio</small>
+          <p className="small">- Assessoria exclusiva com especialistas do segmento do seu negocio</p>
+          <p className="small">- Atendimento humanizado Comunicação clara e próxima, sem burocracia.</p>
+          <p className="small">- Planos de acordo com a necessidade do seu negocio</p>
           <a href="" className="btn bi">Fale Conosco</a>
         </div>
         {/* <div className="img">

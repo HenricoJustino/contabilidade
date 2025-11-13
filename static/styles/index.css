@@ -67,16 +67,17 @@ body{
     font-weight: bold;
     font-family: Rosel;
 }
-small{
-    font-size: 10px;
+.small{
     color: var(--subtitulo);
     align-items: center;
     justify-content: center;
     text-align: center;
     font-weight: bold;
     font-family: Bookman;
+    font-size: 30px;
+    margin: 15px 0;
 }
-#logo, small{
+#logo{
     text-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
 

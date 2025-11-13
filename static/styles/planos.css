@@ -130,11 +130,12 @@ tbody tr.total td.price.highlight:nth-child(3){
   font-weight: 700;
 }
 .plano small{
-  font-size: 14px;
+  font-size: 18px;
   display: block;
   margin-top: 6px;
   color: var(--subtitulo);
   text-shadow: none;
+  letter-spacing: 0.5px;
 }
 
 .total{
