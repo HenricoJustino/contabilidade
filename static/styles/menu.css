@@ -52,3 +52,11 @@ nav{
     user-select: none;
     z-index: 2;
 }
+small{
+    color: var(--subtitulo);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-family: Bookman;
+}
