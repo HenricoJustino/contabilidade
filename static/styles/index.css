@@ -524,7 +524,7 @@ main{
     }
 
     #main1{
-        height: 60vh;
+        height: auto;
         background-color: var(--fundo-secundario);
         flex-direction: column;
         align-items: start;
@@ -533,7 +533,7 @@ main{
         justify-content: space-evenly;
 
         div{
-            margin: 0 20px;
+            margin: 20px;
         }
         .titulomei{
             font-size: 30px;
@@ -545,6 +545,7 @@ main{
         .imgmei{
             height: 200px;
             display: flex;
+            margin: 20px;
         }
     }
 
@@ -622,7 +623,7 @@ main{
     }
    
     #main3{
-        height: 94vh;
+        height: auto;
         background-color: var(--fundo-secundario);
         flex-direction: column;
     }
@@ -644,6 +645,7 @@ main{
         height: 300px;
         border-radius: 50%;
         background-color: #1E90FF;
+        margin: 20px;
     }
 
     .social-icons a {
