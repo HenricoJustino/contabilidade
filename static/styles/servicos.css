@@ -126,11 +126,11 @@
 
 @media (max-width: 480px) {
   #servicos-main {
-    padding: 20px 10px;
+    padding: 20px 0;
   }
   
   .titulo {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 20px;
   }
   

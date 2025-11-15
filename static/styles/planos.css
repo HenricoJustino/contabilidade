@@ -74,7 +74,7 @@ tbody tr.total td.price.highlight:nth-child(3){
 .planos-card .service-subtitle{
   font-size: 16px;
   color: var(--subtitulo);
-  font-family: Bookman;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", Ubuntu, Cantarell, sans-serif;
 }
 
 /* Tabela em 3 colunas */
@@ -88,12 +88,13 @@ tbody tr.total td.price.highlight:nth-child(3){
 .comparativo{
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 .comparativo thead th{
   background: rgba(255,255,255,0.06);
   font-weight: bold;
   color: var(--botao);
-  font-family: Bookman;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", Ubuntu, Cantarell, sans-serif;
   font-size: 20px;
   padding: 14px 16px;
 }
@@ -111,7 +112,7 @@ tbody tr.total td.price.highlight:nth-child(3){
   color: var(--texto);
   font-size: 18px;
   letter-spacing: 0.5px;
-  font-family: Bookman;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", Ubuntu, Cantarell, sans-serif;
   font-weight: 500;
 }
 .plano{
@@ -137,6 +138,7 @@ tbody tr.total td.price.highlight:nth-child(3){
   color: var(--subtitulo);
   text-shadow: none;
   letter-spacing: 0.5px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", Ubuntu, Cantarell, sans-serif;
 }
 
 .total{
@@ -144,7 +146,7 @@ tbody tr.total td.price.highlight:nth-child(3){
 }
 .price{
   text-align: center;
-  font-family: Bookman;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", Ubuntu, Cantarell, sans-serif;
   font-size: 18px;
   color: var(--botao-texto);
 }
@@ -153,14 +155,20 @@ tbody tr.total td.price.highlight:nth-child(3){
   font-weight: bold;
 }
 
-/* Responsividade */
 @media (max-width: 900px){
-  .comparativo thead{ display: none; }
-  .comparativo tr{ display: grid; grid-template-columns: 1fr; }
-  .comparativo td{ border-top: 1px solid rgba(255,255,255,0.06); }
-  .descricao::before{ content: "Descrição"; display: block; color: var(--subtitulo); font-size: 12px; margin-bottom: 6px; }
-  .plano.basico::before{ content: "Essencial"; display: block; color: var(--subtitulo); font-size: 12px; margin-bottom: 6px; }
-  .plano.completo::before{ content: "Completo"; display: block; color: var(--subtitulo); font-size: 12px; margin-bottom: 6px; }
+  .card-table { width: auto; }
+}
+@media (max-width: 480px){
+  .card-table { width: auto; }
+  td.descricao{
+    font-size: 15px;
+  }
+  .plano small{
+    font-size: 12px;
+  }
+  td.price{
+    font-size: 15px;
+  }
 }
 .start{
   text-align: left;
