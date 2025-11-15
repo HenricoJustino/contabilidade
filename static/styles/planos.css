@@ -112,6 +112,7 @@ tbody tr.total td.price.highlight:nth-child(3){
   font-size: 18px;
   letter-spacing: 0.5px;
   font-family: Bookman;
+  font-weight: 500;
 }
 .plano{
   text-align: center;

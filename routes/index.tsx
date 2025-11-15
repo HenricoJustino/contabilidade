@@ -14,16 +14,13 @@ export default function Home() {
           <p className="small">- Planos de acordo com a necessidade do seu negocio</p>
           <a href="" className="btn bi">Fale Conosco</a>
         </div>
-        {/* <div className="img">
-          <img className="imgprincipal" src="/img/w1.jpg" alt="img" />
-        </div> */}
       </main>
       <main id="main1">
         <img className="imgmei" src="/img/w2.jpg" alt="img" />
         <div>
-          <h1>O limite do MEI é um obstáculo para o seu crescimento?</h1>
+          <h1 className="titulomei">O limite do MEI é um obstáculo para o seu crescimento?</h1>
           <br />
-          <p>Não permita que o teto de faturamento ou a mudança de atividade freiem seus planos. Se o seu MEI evoluiu ou passou a exercer um novo serviço não permitido, nossa equipe é especializada em conduzir essa transição. </p>
+          <p className="paragrafomei">Não permita que o teto de faturamento ou a mudança de atividade freiem seus planos. Se o seu MEI evoluiu ou passou a exercer um novo serviço não permitido, nossa equipe é especializada em conduzir essa transição. </p>
         </div>
         
       </main>
@@ -73,11 +70,8 @@ export default function Home() {
             <a href="#" aria-label="Instagram"><i className="fa-brands fa-instagram"></i></a>
             <a href="#" aria-label="WhatsApp"><i className="fa-brands fa-whatsapp"></i></a>
           </div>
-        </section>-
-        <div className="efeito">
-            <div className="efeito2"></div>
-            <img className="italo" src="/img/italo.png" alt="" />
-          </div>
+        </section>
+        <img src="/img/w2.jpg" alt="" />
         
       </main>
     </div>

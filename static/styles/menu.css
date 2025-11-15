@@ -60,3 +60,12 @@ small{
     font-weight: bold;
     font-family: Bookman;
 }
+
+@media (max-width: 530px){
+    nav{
+        flex-direction: column;
+        .btn{
+            display: none;
+        }
+    }
+}
